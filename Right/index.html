@@ -1,42 +1,76 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" href="css/styles.css"/>
-		<meta charset="utf-8"/>
-		<meta name="description" content="All I Want For Christmas Is..."/>
-		<meta name="keywords" content="christmas, list, shopping"/>
-		<meta name="robots" content="index, follow"/>
-		<meta name="robots" content="noindex, nofollow"/>
-		<meta name="viewport" content="user-scalable=no, width=device-width"/>
-		<meta name="viewport" content="target-densitydpi=device-dpi"/>
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="320"/>	
-		<title>All I Want For Christmas Is...</title>
-    </head
-    <body>
-		<header>
-			<hgroup>
-				<h1><a><img src="images/title.gif" width="300"/></a></h1>
-				<h2><a href="additem.html"><img src="images/coa.gif" alt="Call to Action" width="230"/></a></h2>
-			</hgroup>
-		</header>
-		<p>The best way to share with family and friends just what YOU want for Christmas this year.</p>
-		<nav>
-			<a href="additem.html"><img src="images/getstarted.png"/></a><a href="#"><img src="images/contact.png"/></a>
-		</nav>		
-		<search>
-			<br><label for="search">Search this site:</label><input type="text" id="search" placeholder="Search Here" /></br>
-		</search>
-		<h3>BROWSE GIFT CATEGORIES:</h3>
-		<nav>
-			<a href="#"><img src="images/entertainment2.png"/></a><a href="#"><img src="images/apparel2.png"/></a>
-		</nav>
-		<nav>
-			<a href="#"><img src="images/electronics2.png"/></a><a href="#"><img src="images/books2.png"/></a>
-		</nav>
-		<nav>
-			<a href="#"><img src="images/music2.png"/></a><a href="#"><img src="images/etc2.png"/></a>
-		</nav>
-	</body>
+<!doctype html>  
+<html lang="en">
+<head>
 
+	<meta charset="utf-8">
+	
+	<title>All I Want for Christmas Is...</title>
+
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/styles.css"/>
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+
+</head>
+<body>
+	<div data-role="page" id="welcome" data-theme="d">	
+			<div data-role="header" data-position="fixed">
+			<h2>All I Want for Christmas Is...</h2>
+			</div>
+				<ul data-role="listview" data-filter="true">
+					<li><a href="#add">
+						<h3>Add Item</h3>
+						<p>Add an item to your list.</p>
+					</a></li>
+					<li><a href="#view">
+						<h3>View Your Items</h3>
+						<p>Add an item to your list.</p>
+					</a></li>	
+			</ul>	
+		</div>
+		
+	<div data-role="page" id="add" data-theme="d">
+			<div data-role="header" data-
+				<h3>Add an Item</h3>
+			</div>		
+	</div>
+	
+		<div data-role="page" id="view" data-theme="a">
+			<div data-role="header" data-position="fixed">
+				<h3>View Your List</h3>
+		</div>
+			
+	<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#add" data-icon="plus" >Add item</a></li>
+					<li><a href="#welcome" data-icon="home">Home</a></li>
+				</ul>
+			</div>
+	</div>	
+	
+			
+</div>
+
+
+	
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script src="js/libs/modernizr.custom.min.js"></script>
+	<script src="js/json.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
 </html>
