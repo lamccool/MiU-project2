@@ -20,14 +20,6 @@
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
-	
-		 <!-- jQuery - required for jQuery Mobile -->
-    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-    <!-- My JS -->
-    <script src="js/min/json.js"></script>
-    <script src="js/min/main.js"></script>
-    <!-- jQuery Mobile JS -->
-    <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
 
 </head>
 <body>
@@ -40,7 +32,7 @@
 			</div>
 			<div data-role="content">	
 				<ul data-role="listview">
-					<li><a href="additem.html" id="add" data-ajax="false">
+					<li><a href="additem.html" data-ajax="false">
 						<h3>Add Item</h3>
 						<p>Add an item to your list.</p>
 					</a></li>
@@ -55,7 +47,7 @@
 			<div data-role="footer" data-position="fixed" data-id="home"data-theme="a">
 				<div data-role="navbar">
 					<ul>
-						<li><a href="additem.html" data-icon="plus" >Add item</a></li>
+						<li><a href="additem.html" data-icon="plus"data-ajax="false">Add item</a></li>
 						<li><a href="index.html" data-icon="home" class="ui-btn-active">Home</a></li>
 					</ul>
 				</div>
@@ -80,7 +72,7 @@
 		<div data-role="footer" data-position="fixed" data-id="home" data-theme="a">
 				<div data-role="navbar">
 					<ul>
-						<li><a href="additem.html" data-icon="plus">Add item</a></li>
+						<li><a href="additem.html" data-icon="plus" data-ajax="false">Add item</a></li>
 						<li><a href="index.html" data-icon="home">Home</a></li>
 					</ul>
 				</div>
