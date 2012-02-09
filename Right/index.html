@@ -20,13 +20,20 @@
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
-
+	
+		 <!-- jQuery - required for jQuery Mobile -->
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <!-- My JS -->
+    <script src="js/min/json.js"></script>
+    <script src="js/min/main.js"></script>
+    <!-- jQuery Mobile JS -->
+    <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
 
 </head>
 <body>
 	<div data-role="page" id="home" data-theme="d">	
-			<div data-role="header" data-position="fixed" data-theme="d">
-				<h1>Home</h1>
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h5>All I Want for Christmas Is...</h5>
 			</div><!-- /header -->
 			<div class="cta"id="cta">
 			<img src="images/coa.gif" id="img"/>
@@ -45,131 +52,16 @@
 		
 			</div><!-- /content -->
 			
-			<div data-role="footer" data-position="fixed" data-id="home"data-theme="d">
+			<div data-role="footer" data-position="fixed" data-id="home"data-theme="a">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="additem.html" data-icon="plus" >Add item</a></li>
-						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-						<li><a href="#view" data-icon="star">View List</a></li>
+						<li><a href="index.html" data-icon="home" class="ui-btn-active">Home</a></li>
 					</ul>
 				</div>
 			</div><!-- /footer -->
 	
 	</div>
-	
-	
-	<!-- /page -->
-		<!-- <div data-role="page" id="add" data-theme="d">	
-			<div data-role="header" data-position="fixed" data-theme="d">
-				<h1>Add an Item</h1>
-			</div><!-- /header 
-
-			<div data-role="content">	
-
-			</div><!-- /content 
-				<label for="category">Gift Category</label>
-			    	<select id="category">
-			    	    <option value="Choose">--Choose A Gift Category--</option>
-			    		<option value="Electronics">Electronics</option>
-			    	 	<option value="Entertainment">Entertainment</option>
-			    	 	<option value="Apparel">Apparel</option>
-			    	 	<option value="Music">Music</option>
-			    	 	<option value="Books">Books</option>
-			    	 	<option value="Etc">Etc</option>
-			    	</select>
-			<div data-role="fieldcontain">
-			    <label for="comments"> Describe the gift:</label>
-   				 	<input type="text" name="name" id="comments" value="" /> 
-   			</div>  
-   						
-   			 <div data-role="fieldcontain">
-   				 <label for="slider">Quantity:</label>
-   					<input type="range" name="slider" id="slider-0" value="1" min="0" max="50" step="1" />
-   			 </div>
-   		<fieldset data-role="controlgroup">
-			<legend>Choose a pet:</legend>
-     			<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
-     				<label for="radio-choice-1">Online</label>
-	
-     			<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
-     				<label for="radio-choice-2">In a Store</label>
-
-		</fieldset>
-			<label for="store">Store Name:</label>
-   				 	<input type="text" id="store" placeholder="ex: Amazon, Best Buy" value=""/>
-		
-			<label for="url">Product URL (if applicable):</label>
-					<input type="url" id="url" />
-					
-			<div data-role="fieldcontain">
-				<fieldset data-role="controlgroup"data-type="horizontal">
-						<legend>Date Added:</legend>
-							<label for="select-choice-month">Month</label>
-							<select name="select-choice-month" id="select-choice-month">
-								<option>Month</option>
-								<option value="jan">January</option>
-								<option value="feb">February</option>
-								<option value="mar">March</option>
-								<option value="apr">April</option>
-								<option value="may">May</option>
-								<option value="jun">June</option>
-								<option value="jul">July</option>
-								<option value="aug">August</option>
-								<option value="sept">September</option>
-								<option value="oct">October</option>
-								<option value="nov">November</option>
-								<option value="dec">December</option>
-							
-							</select>
-							<label for="select-choice-day">Day</label>
-							<select name="select-choice-day" id="select-choice-day">
-								<option>Day</option>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10</option>
-								<option value="11">11</option>
-								<option value="12">12</option>
-								<option value="13">13</option>
-								<option value="14">14</option>
-								<option value="15">16</option>
-								<option value="17">17</option>
-								<option value="18">18</option>
-								<option value="19">19</option>
-								<option value="20">20</option>
-								<option value="21">21</option>
-								<option value="22">22</option>
-								<option value="23">23</option>
-								<option value="24">24</option>
-								<option value="25">25</option>
-								<option value="26">26</option>
-								<option value="27">27</option>
-								<option value="28">28</option>
-								<option value="29">29</option>
-								<option value="30">30</option>
-								<option value="31">31</option>
-
-							</select>
-
-				</fieldset>
-			</div>
-			
-			<div data-role="footer" data-position="fixed" data-id="home" data-theme="d">
-				<div data-role="navbar">
-					<ul>
-						<li><a href="#add" data-icon="plus" class="ui-btn-active">Add item</a></li>
-						<li><a href="#home" data-icon="home">Home</a></li>
-						<li><a href="#view" data-icon="star">View List</a></li>
-					</ul>
-				</div>
-			</div>
-	
-	</div>	
 	
 		<!-- /page -->
 		<div data-role="page" id="view" data-theme="d">	
@@ -185,12 +77,11 @@
 
 			</div><!-- /content -->
 		
-		<div data-role="footer" data-position="fixed" data-id="home" data-theme="d">
+		<div data-role="footer" data-position="fixed" data-id="home" data-theme="a">
 				<div data-role="navbar">
 					<ul>
-						<li><a href="#add" data-icon="plus" >Add item</a></li>
-						<li><a href="#home" data-icon="home">Home</a></li>
-						<li><a href="#view" data-icon="star" class="ui-btn-active">View List</a></li>
+						<li><a href="additem.html" data-icon="plus">Add item</a></li>
+						<li><a href="index.html" data-icon="home">Home</a></li>
 					</ul>
 				</div>
 			</div><!-- /footer -->
