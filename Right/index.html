@@ -39,10 +39,10 @@
 						<p>Add an item to your list.</p>
 						<img src="images/add-thumb.gif"/>
 					</a></li>
-					<li><a href="#view">
-						<h3>View Your Items</h3>
-						<p>Add an item to your list.</p>
-						<img src="images/list-thumb.gif"/>
+					<li><a href="#ideas">
+						<h3>Gift Ideas</h3>
+						<p>Need some inspiration?</p>
+						<img src="images/gift.gif"/>
 					</a></li>	
 				</ul>	
 		
@@ -51,40 +51,75 @@
 			<div data-role="footer" data-position="fixed" data-id="home"data-theme="a">
 				<div data-role="navbar">
 					<ul>
-						<li><a href="additem.html" data-icon="plus"data-ajax="false">Add item</a></li>
 						<li><a href="index.html" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="#ideas" data-icon="star">Gift Ideas</a></li>
+						<li><a href="additem.html" data-icon="plus" data-ajax="false">Add Item</a></li>
+
 					</ul>
 				</div>
 			</div><!-- /footer -->
 	
 	</div>
 	
-		<!-- /page -->
-		<div data-role="page" id="view" data-theme="d">	
+				<!-- /page -->
+		<div data-role="page" id="ideas" data-theme="d">	
 			<div data-role="header" data-position="fixed" data-theme="d">
-				<h1>View Your List</h1>
+				<h1>Gift Ideas</h1>
 				<img src="images/main-title.gif"/>
 			
 			</div><!-- /header -->
 
 			<div data-role="content">
-			<ul data-role="listview" data-filter="true">
-				<li>Lalalala</li> 
-			</ul>
-				
-
-			</div><!-- /content -->
+		<div data-role="collapsible-set" data-theme"d">
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Entertainment</h3>
+				<p>DVD</p>
+				<p>Bluray</p>
+				<p>Video Game</p>
+			</div>	
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Apparel</h3>
+				<p>Clothes</p>
+				<p>Shoes</p>
+				<p>Jewelry</p>
+			</div>
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Music</h3>
+				<p>CDs</p>
+			</div>
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Electronics</h3>
+				<p>DVD/Bluray Player</p>
+				<p>TV</p>
+				<p>Playstation 3</p>
+			</div>
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Books</h3>
+				<p>Harry Potter</p>
+				<p>Hunger Games</p>
+				<p>Sherlock Holmes</p>
+			</div>
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Etc</h3>
+				<p>Gift Cards</p>
+				<p>Cash</p>
+				<p>Video Game</p>
+			</div>	
+					
+		</div>
+	</div><!-- /content -->
 		
 		<div data-role="footer" data-position="fixed" data-id="home" data-theme="a">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="index.html" data-icon="home">Home</a></li>
+						<li><a href="#ideas" data-icon="star" class="ui-btn-active">Gift Ideas</a></li>
+						<li><a href="additem.html" data-icon="plus" data-ajax="false">Add Item</a></li>
 					</ul>
 				</div>
 			</div><!-- /footer -->
 	
-	</div><!-- /page -->	
-			
+	</div><!-- /page -->				
 </div>
 
 
