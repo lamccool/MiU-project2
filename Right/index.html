@@ -1,4 +1,5 @@
-<!doctype html>  
+<!doctype html> 
+<!-- RIGHT -->
 <html lang="en">
 <head>
 
@@ -24,8 +25,9 @@
 </head>
 <body>
 	<div data-role="page" id="home" data-theme="d">	
-			<div data-role="header" data-position="fixed" data-theme="a">
-				<h5>All I Want for Christmas Is...</h5>
+			<div data-role="header" data-position="fixed" data-theme="c">
+				<!--<h5>All I Want for Christmas Is...</h5>-->
+				<img src="images/main-title.gif"/>
 			</div><!-- /header -->
 			<div class="cta"id="cta">
 			<img src="images/coa.gif" id="img"/>
@@ -35,10 +37,12 @@
 					<li><a href="additem.html" data-ajax="false">
 						<h3>Add Item</h3>
 						<p>Add an item to your list.</p>
+						<img src="images/add-thumb.gif"/>
 					</a></li>
 					<li><a href="#view">
 						<h3>View Your Items</h3>
 						<p>Add an item to your list.</p>
+						<img src="images/list-thumb.gif"/>
 					</a></li>	
 				</ul>	
 		
@@ -59,6 +63,8 @@
 		<div data-role="page" id="view" data-theme="d">	
 			<div data-role="header" data-position="fixed" data-theme="d">
 				<h1>View Your List</h1>
+				<img src="images/main-title.gif"/>
+			
 			</div><!-- /header -->
 
 			<div data-role="content">
@@ -72,7 +78,6 @@
 		<div data-role="footer" data-position="fixed" data-id="home" data-theme="a">
 				<div data-role="navbar">
 					<ul>
-						<li><a href="additem.html" data-icon="plus" data-ajax="false">Add item</a></li>
 						<li><a href="index.html" data-icon="home">Home</a></li>
 					</ul>
 				</div>
