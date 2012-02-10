@@ -1,5 +1,3 @@
-//Project 4
-//Visual Frameworks 1201
 //Mobile Media Development
 //Full Sail University
 //Laura McCool

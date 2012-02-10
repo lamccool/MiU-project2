@@ -41,6 +41,10 @@
 					<li><a href="#ideas">
 						<h3>Gift Ideas</h3>
 						<p>Need some inspiration?</p>
+					</a></li>
+					<li><a href="#gallery">
+						<h3>Image Gallery</h3>
+						<p>A gallery of images</p>
 					</a></li>	
 				</ul>	
 		
@@ -61,49 +65,49 @@
 		<!-- /page -->
 		<div data-role="page" id="ideas" data-theme="d">	
 			<div data-role="header" data-position="fixed" data-theme="d">
-				<h1>Gift Ideas</h1>
 				<img src="images/main-title.gif"/>
 			
 			</div><!-- /header -->
 
 			<div data-role="content">
-		<div data-role="collapsible-set">
-			<div data-role="collapsible" data-collapsed="true">
-				<h3>Entertainment</h3>
-				<p>DVD</p>
-				<p>Bluray</p>
-				<p>Video Game</p>
-			</div>	
-			<div data-role="collapsible" data-collapsed="true">
-				<h3>Apparel</h3>
-				<p>Clothes</p>
-				<p>Shoes</p>
-				<p>Jewelry</p>
-			</div>
-			<div data-role="collapsible" data-collapsed="true">
-				<h3>Music</h3>
-				<p>CDs</p>
-			</div>
-			<div data-role="collapsible" data-collapsed="true">
-				<h3>Electronics</h3>
-				<p>DVD/Bluray Player</p>
-				<p>TV</p>
-				<p>Playstation 3</p>
-			</div>
-			<div data-role="collapsible" data-collapsed="true">
-				<h3>Books</h3>
-				<p>Harry Potter</p>
-				<p>Hunger Games</p>
-				<p>Sherlock Holmes</p>
-			</div>
-			<div data-role="collapsible" data-collapsed="true">
-				<h3>Etc</h3>
-				<p>Gift Cards</p>
-				<p>Cash</p>
-				<p>Video Game</p>
-			</div>	
+				<ul data-role="listview" data-theme="d" data-filter="true"> 
+				<li>
+					<h3>Entertainment</h3>
+						<p>DVD</p>
+						<p>Bluray</p>
+						<p>Video Game</p>
+				</li>
+				<li>
+					<h3>Apparel</h3>
+						<p>Clothes</p>
+						<p>Shoes</p>
+						<p>Jewelry</p>
+				</li>
+				<li>
+					<h3>Music</h3>
+						<p>CDs</p>
+				</li>
+				<li>
+					<h3>Electronics</h3>
+						<p>DVD/Bluray Player</p>
+						<p>TV</p>
+						<p>Playstation 3</p>
+				</li>
+				<li>
+					<h3>Books</h3>
+						<p>Harry Potter</p>
+						<p>Hunger Games</p>
+						<p>Sherlock Holmes</p>
+				</li>
 					
-		</div>
+					<li>
+						<h3>Etc</h3>
+						<p>Gift Cards</p>
+						<p>Cash</p>
+						<p>Video Game</p>
+					</li>
+		</ul>	
+					
 	</div><!-- /content -->
 		
 		<div data-role="footer" data-position="fixed" data-id="home" data-theme="a">
@@ -116,6 +120,58 @@
 			</div><!-- /footer -->
 	
 	</div><!-- /page -->	
+	
+		<!-- /page -->
+		<div data-role="page" id="gallery" data-theme="d">	
+			<div data-role="header" data-position="fixed" data-theme="d">
+				<img src="images/main-title.gif"/>
+			
+			</div><!-- /header -->
+
+			<div data-role="content">
+			
+				Horizontal
+<div style="height: 300px; width: 500px">
+    <ul data-role="carousel1" style="display: none;">
+        <li><div style="width: 100%; height: 100%; background-color:#381;" src="images/main-title.gif"/>>Page 1</div></li>
+        <li><div style="width: 100%; height: 100%; background-color:#837;">Page 2</div></li>
+        <li><div style="width: 100%; height: 100%; background-color:#999;">Page 3</div></li>
+        <li><div style="width: 100%; height: 100%; background-color:#738;">Page 4</div></li>
+        <li><div style="width: 100%; height: 100%; background-color:#142;">Page 5</div></li>
+        <li><div style="width: 100%; height: 100%; background-color:#927;">Page 6</div></li>
+        <li><div style="width: 100%; height: 100%; background-color:#987;">Page 7</div></li>
+        <li><div style="width: 100%; height: 100%; background-color:#187;">Page 8</div></li>
+    </ul>
+</div>
+Vertical
+<div style="height: 300px; width: 500px">
+    <ul data-role="carousel2" style="display: none;">
+        <li><div style="width: 100%; height: 100%; background-color:#381;">Page 1</div></li>
+        <li><div style="width: 100%; height: 100%; background-color:#837;">Page 2</div></li>
+        <li><div style="width: 100%; height: 100%; background-color:#999;">Page 3</div></li>
+        <li><div style="width: 100%; height: 100%; background-color:#738;">Page 4</div></li>
+        <li><div style="width: 100%; height: 100%; background-color:#142;">Page 5</div></li>
+        <li><div style="width: 100%; height: 100%; background-color:#927;">Page 6</div></li>
+        <li><div style="width: 100%; height: 100%; background-color:#987;">Page 7</div></li>
+        <li><div style="width: 100%; height: 100%; background-color:#187;">Page 8</div></li>
+    </ul>
+</div>
+		</div><!-- /content -->
+		
+		<div data-role="footer" data-position="fixed" data-id="home" data-theme="a">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" data-icon="home">Home</a></li>
+						<li><a href="#ideas" data-icon="star" class="ui-btn-active">Gift Ideas</a></li>
+					</ul>
+				</div>
+			</div><!-- /footer -->
+	
+	</div><!-- /page -->		
+	
+	
+	
+	
 			
 </div>
 

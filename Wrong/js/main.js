@@ -55,6 +55,13 @@ window.addEventListener ("DOMContentLoaded", function(){
 		}
 	}
 	
+    function($) {
+        $("#carousel1").carousel();
+        $("#carousel2").carousel({direction: "vertical"});
+    })(jQuery);
+	
+	
+	
 	function storeData(key){
 	// If there is no key this means this is a brand new item and we need a new key
 		if (!key){

@@ -64,3 +64,16 @@ nav{
 	
 }
 
+#myCarousel { 
+        margin:0;
+        padding:0;
+        height:75px;
+}
+#myCarousel li {
+        width:930px;
+        height:75px;
+        list-style:none;
+        float:left;
+        position:relative;
+}
+
